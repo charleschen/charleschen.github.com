@@ -1,4 +1,5 @@
 # a comment - this will be ignored
 *.[oa]
+_site
 !lib.a
 *~
