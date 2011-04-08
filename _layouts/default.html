@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} V.v.V {% endif %} Charles Chen</title>
+    <meta name="description" content="description goes here.  werd.">
+    
+    <link rel="stylesheet" media="screen, project" href="./res/screen.css" type="text/css">
   </head>
 
   <body>
-    <h1>{{ page.title }}</h1>
+    <header>
+      <h1><a href="/">cc's blog</a></h1>
+    </header>
 
     {{ content }}
   </body>

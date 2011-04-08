@@ -1,0 +1,28 @@
+/* base */
+
+* { margin:0; padding;0; font-family:inherit; }
+
+body{
+	backgroun:white; color:#222;
+	font:11px Georgia, serif;
+	line-height:1.4;
+	font-weight: lighter;
+	margin: 0 auto;
+	width: 640px;
+}
+
+header {
+       display: block;
+       border-bottom: 2px solid #000;
+       padding: 0;
+       margin: 0 auto;
+}
+
+
+#main { margin-bottom: 3em; }
+
+
+
+body div.content {}
+body div.content *[align=right] { margin-left:1em; margin-bottom:1em; }
+
