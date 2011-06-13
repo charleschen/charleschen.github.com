@@ -1,16 +1,9 @@
 ---
 layout: default
-title: V.v.V
----
-
+title: Blog
+---	
 <div class="posts">
   {% for post in site.posts limit:10 %}
   {% include listed-post.html %}
-  <!-- h2>
-       <a href="{{ post.url }}">{{ post.date | date_to_long_string }} // {{ post.title }} </a>
-</h2 >
-
-{{ post.content }}
-<em> Posted on {{ post.date | date_to_long_string }}.</em-->
   {% endfor %}
 </div>

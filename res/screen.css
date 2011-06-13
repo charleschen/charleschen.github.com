@@ -2,14 +2,18 @@
 
 * { margin:0; padding;0; font-family:inherit; }
 
+/*
 body{
-	backgroun:white; color:#222;
+	background:white; color:#222;
 	font:11px Georgia, serif;
 	line-height:1.4;
 	font-weight: lighter;
 	margin: 0 auto;
 	width: 640px;
+	
+	
 }
+
 
 header {
        display: block;
@@ -31,4 +35,102 @@ a:visited:hover { color:#000}
 
 body div.content {}
 body div.content *[align=right] { margin-left:1em; margin-bottom:1em; }
+
+*/
+
+
+/* anchor tags */
+
+a { text-decoration:none; }
+a:link, a:active { color:#000}
+a:visited {color:#000}
+a:link:hover, a:active:hover, a:visited:hover { text-decoration:underline; }
+a:link:hover, a:active:hover { color:#000}
+a:visited:hover { color:#000}
+
+/*wrap*/
+
+body{
+	background:white; color:#222;
+	font:14px Georgia, serif;
+	line-height:1.4;
+	font-weight: lighter;
+}
+
+#wrap {
+	width:800px;
+	margin:0 auto;
+	margin-top: 30px;
+}
+
+#header {
+	float:left;
+	width:130px;
+	padding:10px;
+	text-align:right;
+}
+
+#header h1{
+	font-size:30px;
+	line-height:1;
+	padding-bottom: 2px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+#header ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#header li {
+	margin:0;
+	padding:0;
+}
+
+#main{
+	float:right;
+	width:630px;
+	padding:10px;
+	
+}
+
+div.post{
+	width: 620px;
+	padding: 5px;
+}
+
+div.post.sig{
+	text-align: right;
+}
+
+div.post.body{
+	
+}
+
+div.post.body p{
+	margin: 1em 0;
+}
+
+#footer {
+	clear:both;
+	padding:5px 10px;
+	text-align:right;
+}
+#footer p{
+	margin:0;
+}
+
+.purple {
+	color: purple;
+}
+
+.yellow {
+	color: yellow;
+}
+
+.black {
+	font-color: black;
+}
 

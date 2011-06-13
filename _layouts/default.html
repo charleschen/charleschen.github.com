@@ -2,17 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} V.v.V {% endif %} Charles Chen</title>
+    <title>Charles Chen - {% if page.title %}{{ page.title }} {% endif %}</title>
     <meta name="description" content="description goes here.  werd.">
     
     <link rel="stylesheet" media="screen, project" href="/res/screen.css" type="text/css">
-  </head>
+  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="/res/myJava.js"></script>
+</head>
 
   <body>
-    <header>
-      <h1><a href="/">cc's blog</a></h1>
-    </header>
-
-    {{ content }}
+    <div id="wrap">
+		<div id="header">
+			<h1>Charles<br />Chen</h1>
+			<ul>
+				<li><a href="/">blog</a></li>
+				<li><a href="/about.html">about</a></li>
+				<li id="archive"><a href="#">archive</a></li>
+			</ul>
+		</div>
+		<div id="main">
+      		{{ content }}
+		</div>
+		<div id="footer">
+			<p>&copy&copy</p>
+		</div>
+	</div>
+    
+    
   </body>
 </html>
