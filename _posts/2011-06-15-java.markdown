@@ -1,0 +1,6 @@
+---
+layout: post 
+title: Java
+---
+
+<p>  Just finished a Sample problem for a job interview.  It was done in Java.  Made me realize how rusty I was, I really need to go back and review/code some Java stuff. </p>
