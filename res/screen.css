@@ -42,11 +42,19 @@ body div.content *[align=right] { margin-left:1em; margin-bottom:1em; }
 /* anchor tags */
 
 a { text-decoration:none; }
-a:link, a:active { color:#000}
-a:visited {color:#000}
+a:link, a:active { color:#000099}
+a:visited {color:#990033}
 a:link:hover, a:active:hover, a:visited:hover { text-decoration:underline; }
 a:link:hover, a:active:hover { color:#000}
 a:visited:hover { color:#000}
+
+#header a:visited, #paginator a:visited, h1 a:visited, h2 a:visited, h3 a:visited{
+	color:#000;
+}
+
+#header a:link, #paginator a:link, h1 a:link, h2 a:link, h3 a:link{
+	color:#000;
+}
 
 /*wrap*/
 
@@ -105,21 +113,39 @@ div.post.sig{
 	text-align: right;
 }
 
-div.post.body{
-	
+div.post table{
+	padding: 0;
 }
 
 div.post.body p{
-	margin: 1em 0;
+	margin: 0 0 1em 0;
 }
 
 #footer {
 	clear:both;
-	padding:5px 10px;
-	text-align:right;
+	padding: 0 0 3em 0;
 }
 #footer p{
+	text-align: right;
 	margin:0;
+}
+
+ul#paginator {
+	padding: 1em 0 0 0;
+	margin-left: 170px;
+	width: 630px;
+	list-style: none;
+	border-top: 1px solid black;
+}
+
+ul#paginator .left{
+	padding: 0px;
+	float: left;
+}
+
+ul#paginator .right{
+	padding: 0px;
+	float: right;
 }
 
 .purple {

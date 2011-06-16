@@ -17,14 +17,32 @@
 			<ul>
 				<li><a href="/">blog</a></li>
 				<li><a href="/about.html">about</a></li>
-				<li id="archive"><a href="#">archive</a></li>
+				<li><a href="/archive.html">archive</a></li>
 			</ul>
 		</div>
 		<div id="main">
       		{{ content }}
 		</div>
 		<div id="footer">
-			<p>&copy&copy</p>
+			{% if paginator.page %}
+				<ul id="paginator">
+		      	{% if paginator.previous_page %}
+					<li class="left">
+				  {% if paginator.previous_page == 1 %}
+						<a href="/">&lt&ltHome</a>
+					{% else %}
+			      		<a href="/page{{ paginator.previous_page }}/">&lt&lt Prev</a>
+				  {% endif %}
+					</li>
+			    {% endif %}
+			
+				{% if paginator.next_page %}
+					<li class="right">
+			    		<a href="/page{{ paginator.next_page }}/">Next &gt&gt</a>
+					</li>
+			    {% endif %}
+				</ul>
+			{% endif %}
 		</div>
 	</div>
     

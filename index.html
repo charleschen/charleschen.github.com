@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---	
 <div class="posts">
-  {% for post in site.posts limit:10 %}
+  {% for post in paginator.posts limit:paginator.per_page %}
   {% include listed-post.html %}
   {% endfor %}
 </div>
