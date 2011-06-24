@@ -11,3 +11,13 @@ task :sync do
   puts '* Publishing files to live server'
   puts `rsync -avz "_site/" ccchen920@chencharles.com:~/chencharles.com/`
 end
+
+desc 'Run Jekyll to generate site'
+task :build do
+  puts '* Generating static site with Jekyll'
+  puts `jekyll --no-auto`
+end
+
+desc 'Generate and sync entire site'
+task :publish => [:build, :sync] do
+end
