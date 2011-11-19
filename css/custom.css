@@ -83,3 +83,7 @@ div.post a {
   background-color: #E9E8FF;
   padding: 5px;
   overflow: auto; }
+
+ul#archive li {
+  list-style: square;
+  margin-bottom: 15px; }
