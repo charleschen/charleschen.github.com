@@ -2,7 +2,11 @@
 layout: default
 ---
 <div class="post">
-	<h2>{{ page.date | date_to_long_string }} | {{ page.title }}</h2>
+	<div class='title'>{{ page.title }}
+	</div>
+	<div class='sub'>
+		{{ page.date | date_to_long_string }}
+	</div>
 	<div class="post body">
 		{{ content }}
 	</div>

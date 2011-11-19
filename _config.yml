@@ -1,3 +1,4 @@
 pygments: true
+markdown: redcarpet
 auto: true
-paginate: 5
+paginate: 3

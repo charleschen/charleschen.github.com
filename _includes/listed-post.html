@@ -1,8 +1,11 @@
-<div class="post">
-		<h2 class="post title">
-			<a href="{{ post.url}}">{{ post.date | date_to_long_string }} | {{ post.title }}</a> 
-		</h2>
-	<div class="post body">
+<div class='post_container'>
+		<div class='title'>
+			<a href="{{ post.url}}">{{ post.title }}</a>
+		</div>
+		<div class='sub'>
+			{{ post.date | date_to_long_string }}
+		</div>
+	<div class="post">
     	{{ post.content }}
   	</div>
 </div>

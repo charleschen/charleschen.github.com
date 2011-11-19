@@ -3,49 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>Charles Chen - {% if page.title %}{{ page.title }} {% endif %}</title>
-    <meta name="description" content="description goes here.  werd.">
+    <meta name="description" content="blogging with cc">
     
-    <link rel="stylesheet" media="screen, project" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="screen, project" href="/css/screen.css" type="text/css">
+		<link rel="stylesheet" media="screen, project" href="/css/custom.css" type="text/css">
+		<link rel="stylesheet" media="screen, project" href="/css/default.css" type="text/css">
   	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-	<script type="text/javascript" src="/res/myJava.js"></script>
-</head>
+		<script type="text/javascript" src="/js/application.js"></script>
+	</head>
 
-  <body>
-    <div id="wrap">
-		<div id="header">
-			<h1>Charles<br />Chen</h1>
-			<ul>
-				<li><a href="/">blog</a></li>
-				<li><a href="/about.html">about</a></li>
-				<li><a href="/archive.html">archive</a></li>
-			</ul>
-			<img src="media/img/postImg1.png"></img>
+	<body>
+		{% include header.html %}
+		<div id='wrapper'>
+			<div id='container'>
+				<div id='main'>
+					{{ content }}
+				</div>
+				{% include footer.html %}
+			</div>
 		</div>
-		<div id="main">
-      		{{ content }}
-		</div>
-		<div id="footer">
-			{% if paginator.page %}
-				<ul id="paginator">
-		      	{% if paginator.previous_page %}
-					<li class="left">
-				  {% if paginator.previous_page == 1 %}
-						<a href="/">&lt&ltHome</a>
-					{% else %}
-			      		<a href="/page{{ paginator.previous_page }}/">&lt&lt Prev</a>
-				  {% endif %}
-					</li>
-			    {% endif %}
-			
-				{% if paginator.next_page %}
-					<li class="right">
-			    		<a href="/page{{ paginator.next_page }}/">Next &gt&gt</a>
-					</li>
-			    {% endif %}
-				</ul>
-			{% endif %}
-		</div>
-	</div>
+	</body>
+
+  <!-- <body>
+      <div id="wrap">
+  		<div id="header">
+  			<h1>Charles<br />Chen</h1>
+  			<ul>
+  				<li><a href="/">blog</a></li>
+  				<li><a href="/about.html">about</a></li>
+  				<li><a href="/archive.html">archive</a></li>
+  			</ul>
+  			<img src="media/img/postImg1.png"></img>
+  		</div>
+  		<div id="main">
+        		{{ content }}
+  		</div>
+  		<div id="footer">
+  			{% if paginator.page %}
+  				<ul id="paginator">
+  		      	{% if paginator.previous_page %}
+  					<li class="left">
+  				  {% if paginator.previous_page == 1 %}
+  						<a href="/">&lt&ltHome</a>
+  					{% else %}
+  			      		<a href="/page{{ paginator.previous_page }}/">&lt&lt Prev</a>
+  				  {% endif %}
+  					</li>
+  			    {% endif %}
+  			
+  				{% if paginator.next_page %}
+  					<li class="right">
+  			    		<a href="/page{{ paginator.next_page }}/">Next &gt&gt</a>
+  					</li>
+  			    {% endif %}
+  				</ul>
+  			{% endif %}
+  		</div>
+  	</div> -->
     
     
   </body>

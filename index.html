@@ -2,8 +2,11 @@
 layout: default
 title: Blog
 ---	
-<div class="posts">
+<div>
   {% for post in paginator.posts limit:paginator.per_page %}
   {% include listed-post.html %}
   {% endfor %}
+	{% include paginator.html %}
 </div>
+
+
