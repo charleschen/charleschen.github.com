@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+		<link rel="icon" 
+		      href="http://chencharles.com/favicon.ico">
     <meta charset="utf-8">
     <title>Charles Chen - {% if page.title %}{{ page.title }} {% endif %}</title>
     <meta name="description" content="blogging with cc">
@@ -23,44 +25,4 @@
 			</div>
 		</div>
 	</body>
-
-  <!-- <body>
-      <div id="wrap">
-  		<div id="header">
-  			<h1>Charles<br />Chen</h1>
-  			<ul>
-  				<li><a href="/">blog</a></li>
-  				<li><a href="/about.html">about</a></li>
-  				<li><a href="/archive.html">archive</a></li>
-  			</ul>
-  			<img src="media/img/postImg1.png"></img>
-  		</div>
-  		<div id="main">
-        		{{ content }}
-  		</div>
-  		<div id="footer">
-  			{% if paginator.page %}
-  				<ul id="paginator">
-  		      	{% if paginator.previous_page %}
-  					<li class="left">
-  				  {% if paginator.previous_page == 1 %}
-  						<a href="/">&lt&ltHome</a>
-  					{% else %}
-  			      		<a href="/page{{ paginator.previous_page }}/">&lt&lt Prev</a>
-  				  {% endif %}
-  					</li>
-  			    {% endif %}
-  			
-  				{% if paginator.next_page %}
-  					<li class="right">
-  			    		<a href="/page{{ paginator.next_page }}/">Next &gt&gt</a>
-  					</li>
-  			    {% endif %}
-  				</ul>
-  			{% endif %}
-  		</div>
-  	</div> -->
-    
-    
-  </body>
 </html>
